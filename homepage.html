@@ -1,31 +1,157 @@
 <head> 
-<link href= "stylesheet.css" rel="stylesheet" type="text/css">
-</head>
+    <link href= "stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="animations.scss" rel="animations" type=text/scss">
+    </head>
+    
+    <body>
+        <div class="back"></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">My Projects</a>
+            <a href="#">Contact me</a>
+        </nav>
+        
+        <div class="typewriter">
+            <div class="typewriter-text">Hello, I am Malak.</div>
+        </div>
 
-<body>
-    <div class="back"></div>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">My Projects</a>
-        <a href="#">Contact me</a>
-    </nav>
+        <div class="mouse_scroll">
 
-    <div id="firstScreen"> 
-        <p> 
-            <div id="helloWorld"> <span  style="color: #4BC167;">print</span> (" <span style="color: #8F16DB;">Hello World!</span> ")</span></div> <br> 
-            <div id="iAmMalak"> <span style="color: #4BC167;">print</span> (" <span style="color: #8F16DB;">I am Malak.</span> ") </div>
-            <div id="imageOfMyFace"> <img src="https://i.ibb.co/JFC42rR/Screen-Shot-2021-02-10-at-8-06-17-PM.png" alt="Screen-Shot-2021-02-10-at-8-06-17-PM" border="3"></a></div>
-            <div id="arrow"> <img src="https://s2.gifyu.com/images/4b639552604dcdfaa8998fda60f01085.gif" alt="Screen-Shot-2021-02-10-at-8-50-36-PM" border="0"></div>
-        </p>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div>
+                <span class="m_scroll_arrows unu"></span>
+                <span class="m_scroll_arrows doi"></span>
+                <span class="m_scroll_arrows trei"></span>
+            </div>
     </div>
-   
-        <p>
-            <div id="aboutMe"> I am Malak Abdeldayem. I currently attend North County High School in MD as well as being a part of the STEM Program! I enjoy attending Hackathons, playing volleyball in the fall and wrestling in the winter, reading books, writing poetry, and mainly:Learning. I often get indulged in my work since I am very interested in topics such as robotics, mathematics, sciences such as chemistry and physics, computer science, engineering, and literature.</div>
-            <div id="hello"> <img src="https://s2.gifyu.com/images/giphy7b7720cdd51e4deb.gif" alt="giphy7b7720cdd51e4deb.gif"" alt="hey!"></div>
-        </p>
+
+        <div>
+            <p>
+               <div id= intro> 
+                   <span style="font-size: 50"> <center><em>Hello world!</em></center></span> <span style="font-size: 30"><center><em>I am Malak Abdeldayem.</em></center></span> <br> I currently attend North County High School in MD as well as being a part of the STEM Program! I enjoy attending hackathons, playing volleyball in the fall and wrestling in the winter, reading books, writing poetry, and importantly: learning. I often get indulged in my work since I am very interested and passionate in topics such as robotics, mathematics, sciences such as chemistry and physics, computer science, engineering, and literature.
+               </div>
+            </p>
+            <div id="snapshot"> <img src="https://i.ibb.co/wR7dT7M/Screen-Shot-2021-02-13-at-9-43-34-PM.png" alt="Screen-Shot-2021-02-13-at-9-43-34-PM" border="0" width="800" height="835"></a></div>
+        </div>
 
 
+         <div id="allcards">
+            <div class="background"></div>
+            <div id="curve1" class="card1">
+                <div class="footer1">
+                    <svg id="curve1">
+                        <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+                        <rect id="dummyRect" x="0" y="0" height="450" width="400"
+                    fill="transparent" />
+                        <!-- slide up-->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+                        <!-- slide up and curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                        <!-- slide down and curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                        <!-- slide down and curve out -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                        <!-- curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+        
+                        <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+                    </svg>
+                    <div class="info1">
+                        <div class="name1">
+                            <a href="https://devpost.com/software/pinkie-pals" target="_">Pinkie Pals</a></div>
+                        <div class="job1">Eliminating isolation of seniors by connecting them with teens.</div>
+                    </div>
+                </div>
+                <div class="card-blur1"></div>
+            </div>
 
-</body>
+            <div class="background"></div>
+            <div id="curve2" class="card2">
+                <div class="footer2">
+                    <svg id="curve2">
+                        <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+                        <rect id="dummyRect" x="0" y="0" height="450" width="400"
+                    fill="transparent" />
+                        <!-- slide up-->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+                        <!-- slide up and curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                        <!-- slide down and curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                        <!-- slide down and curve out -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                        <!-- curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+        
+                        <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+                    </svg>
+                    <div class="info2">
+                        <div class="name2">
+                            <a href="https://devpost.com/software/poptrivia" target="_">PopTrivia!</a></div>
+                        <div class="job2">Let's play some trivia!</div>
+                    </div>
+                </div>
+                <div class="card-blur2"></div>
+            </div>
 
+            <div class="background"></div>
+            <div id="curve3" class="card3">
+                <div class="footer3">
+                    <svg id="curve3">
+                        <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+                        <rect id="dummyRect" x="0" y="0" height="450" width="400"
+                    fill="transparent" />
+                        <!-- slide up-->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+                        <!-- slide up and curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                        <!-- slide down and curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                        <!-- slide down and curve out -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                        <!-- curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+        
+                        <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+                    </svg>
+                    <div class="info3">
+                        <div class="name3">
+                            <a href="https://devpost.com/software/aurora-aeu6v8" target="_">Aurora</a></div>
+                        <div class="job3">A platform for women by women devoted to providing resources that will not only inform but empower and connect women across the globe.</div>
+                    </div>
+                </div>
+                <div class="card-blur3"></div>
+            </div>
+
+            <div class="background"></div>
+            <div id="curve4" class="card4">
+                <div class="footer4">
+                    <svg id="curve4">
+                        <path id="p" d="M0,200 Q80,100 400,200 V150 H0 V50" transform="translate(0 300)" />
+                        <rect id="dummyRect" x="0" y="0" height="450" width="400"
+                    fill="transparent" />
+                        <!-- slide up-->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze" begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+                        <!-- slide up and curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze" begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                        <!-- slide down and curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze" begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                        <!-- slide down and curve out -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze" begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                        <!-- curve in -->
+                        <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze" begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+        
+                        <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze" begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+                    </svg>
+                    <div class="info4">
+                        <div class="name4">
+                            <a href="https://devpost.com/software/calluna-thv6q4" target="_">Calluna</a></div>
+                        <div class="job4">Returning To Normal, Step By Step.</div>
+                    </div>
+                </div>
+                <div class="card-blur4"></div>
+            </div>
+        </div>
