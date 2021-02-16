@@ -1,6 +1,6 @@
 body {
     background-color: #FAF6C6;
-    height: 5000px;
+    height: 10000px;
   }
 
 p {
@@ -127,6 +127,7 @@ nav a:hover:before{
 
 /* end of typewriter effect*/
 
+/* intro */
 #intro {
   background-color: #D5D8D5;
   position: absolute;  
@@ -148,6 +149,8 @@ nav a:hover:before{
   padding-top: 300px;
 }
 
+/* end of intro */
+
 /* mouse animation */
 
 *, *:before, *:after {
@@ -160,7 +163,7 @@ nav a:hover:before{
 	margin: 0 auto;
 	width: 50px;
 	height: 200px;
-	margin-top: 215px;
+  margin-top: 215px;
 }
 
 
@@ -326,7 +329,15 @@ nav a:hover:before{
 
 /* end of mouse animation */
 
+/* start of card animation */
 
+#projects {
+  font-family: Consolas , Courier New , and then monospace;
+  text-align: center;
+  font-size: 90;
+  margin-top: 450px;
+  background-color: #D5D8D5;
+  }
 
 .card1 {
     position: absolute;
@@ -334,7 +345,7 @@ nav a:hover:before{
     height: 450px;
     width: 400px;
     margin-bottom: 10px;
-    right: 1400px;
+    right: 1450px;
     margin-top: 200px;
     top: 2800px;
     margin: auto;
@@ -383,7 +394,6 @@ svg#curve1 {
 
 
 .info1 {
-font-family: Inconsolata;
   padding-left: 20px;
   transform: translateY(250px);
 
@@ -397,10 +407,12 @@ font-family: Inconsolata;
 .name1 {
   font-weight: bolder;
   padding-top: 5px;
+  font-family: Consolas , Courier New , and then monospace;
 }
 
 .job1 {
   margin-top: 10px;
+  font-family: Consolas , Courier New , and then monospace;
 }
 
 .card2 {
@@ -408,8 +420,8 @@ font-family: Inconsolata;
   border-radius: 8px;
   height: 450px;
   width: 400px;
-  margin-bottom: 30px;
-  right: 400;
+  margin-bottom: 10px;
+  right:500;
   left: 0;
   margin-top: 200px;
   top: 2800px;
@@ -473,10 +485,12 @@ font-family: Inconsolata;
 .name2 {
   font-weight: bolder;
   padding-top: 5px;
+  font-family: Consolas , Courier New , and then monospace;
 }
 
 .job2 {
   margin-top: 10px;
+  font-family: Consolas , Courier New , and then monospace;
 }
 
 .card3 {
@@ -486,7 +500,7 @@ font-family: Inconsolata;
   width: 400px;
   margin-bottom: 30px;
   right: 0;
-  left: 500px;
+  left:400px;
   margin-top: 200px;
   top: 2800px;
   margin: auto;
@@ -549,10 +563,12 @@ font-family: Inconsolata;
 .name3 {
   font-weight: bolder;
   padding-top: 5px;
+  font-family: Consolas , Courier New , and then monospace;
 }
 
 .job3 {
   margin-top: 10px;
+  font-family: Consolas , Courier New , and then monospace;
 }
 
 .card4 {
@@ -561,8 +577,7 @@ font-family: Inconsolata;
   height: 450px;
   width: 400px;
   margin-bottom: 30px;
-  right: 0;
-  left: 10px;
+  right: 50px;
   margin-top: 200px;
   top: 2800px;
   margin: auto;
@@ -626,8 +641,21 @@ svg#curve4 {
 .name4 {
     font-weight: bolder;
     padding-top: 5px;
+    font-family: Consolas , Courier New , and then monospace;
 }
 
 .job4 {
     margin-top: 10px;
+    font-family: Consolas , Courier New , and then monospace;
 }
+
+/* end of card animation */
+
+#contact {
+  font-family: Consolas , Courier New , and then monospace;
+  text-align: center;
+  font-size: 90;
+  margin-bottom: 10px;
+  background-color: #D5D8D5;
+}
+
